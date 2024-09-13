@@ -1,0 +1,89 @@
+#include <stdio.h>
+
+
+int main() {
+    int a, b, c, d, e, resultadoA,resultadoA,resultadoB,resultadoC,resultadoD,resultadoE;
+    printf("digite o numero:\n");
+    scanf("%d", &a);
+    printf("digite o numero:\n");
+    scanf("%d", &b);
+    printf("digite o numero:\n");
+    scanf("%d", &c);
+    printf("digite o numero:\n");
+    scanf("%d", &d);
+    printf("digite o numero:\n");
+    scanf("%d", &e);
+
+    resultadoA = absoluto(a);
+    resultadoV = absoluto(b);
+    resultadoC = absoluto(c);
+    resultadoD = absoluto(d);
+    resultadoE = absoluto(e);
+
+    printf("o valor é :%d,%d,%d,%d,%d", resultado(a), resultado(b), resultado(c), resultado(d), resultado(e));
+
+    return 0;
+}
+
+
+int absoluto(a){
+    if (a>=0){
+        a = a;
+        return a;
+    }else {
+        a *= -1;
+        return a;
+    }
+}
+
+
+#include <stdio.h>
+
+// Protótipo da função absoluto
+int absoluto(int a);
+
+int main() {
+    int a, b, c, d, e;
+    int resultado_a, resultado_b, resultado_c, resultado_d, resultado_e;
+
+    // Leitura dos 5 números
+    printf("Digite o primeiro numero:\n");
+    scanf("%d", &a);
+
+    printf("Digite o segundo numero:\n");
+    scanf("%d", &b);
+
+    printf("Digite o terceiro numero:\n");
+    scanf("%d", &c);
+
+    printf("Digite o quarto numero:\n");
+    scanf("%d", &d);
+
+    printf("Digite o quinto numero:\n");
+    scanf("%d", &e);
+
+    // Calcula o valor absoluto para cada número
+    resultado_a = absoluto(a);
+    resultado_b = absoluto(b);
+    resultado_c = absoluto(c);
+    resultado_d = absoluto(d);
+    resultado_e = absoluto(e);
+
+    // Exibe os resultados
+    printf("O valor absoluto de %d é: %d\n", a, resultado_a);
+    printf("O valor absoluto de %d é: %d\n", b, resultado_b);
+    printf("O valor absoluto de %d é: %d\n", c, resultado_c);
+    printf("O valor absoluto de %d é: %d\n", d, resultado_d);
+    printf("O valor absoluto de %d é: %d\n", e, resultado_e);
+
+    return 0;
+}
+
+// Função que calcula o valor absoluto
+int absoluto(int a) {
+    if (a >= 0) {
+        return a;
+    } else {
+        return -a;  // Torna o valor positivo
+    }
+}

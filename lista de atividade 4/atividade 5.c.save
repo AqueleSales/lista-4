@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+void SomaDivisores(int a) {
+    int i, cont = 0;
+    printf("\nos divisores de %d:\n", a);
+
+    for (i = 1; i < a; i++) {
+        if (a % i == 0) {
+            printf("%d é um divisor de %d\n", i, a);
+            cont++;
+        }
+    }
+    printf("o número %d tem %d divisores menores que ele.\n", a, cont);
+}
+
+int main() {
+    int a, b, c, d, e;
+
+    printf("digite o primeiro número:\n");
+    scanf("%d", &a);
+    printf("digite o segundo número:\n");
+    scanf("%d", &b);
+    printf("digite o terceiro número:\n");
+    scanf("%d", &c);
+    printf("digite o quarto número:\n");
+    scanf("%d", &d);
+    printf("Digite o quinto número:\n");
+    scanf("%d", &e);
+
+    SomaDivisores(a);
+    SomaDivisores(b);
+    SomaDivisores(c);
+    SomaDivisores(d);
+    SomaDivisores(e);
+
+    return 0;
+}
